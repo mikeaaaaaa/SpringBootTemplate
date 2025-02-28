@@ -1,0 +1,16 @@
+                      iiii                                     hhhhhhh
+                     i::::i                                    h:::::h
+                      iiii                                     h:::::h
+                                                               h:::::h
+xxxxxxx      xxxxxxxiiiiiii   aaaaaaaaaaaaa      ooooooooooo    h::::h hhhhh         aaaaaaaaaaaaa      ooooooooooo
+ x:::::x    x:::::x i:::::i   a::::::::::::a   oo:::::::::::oo  h::::hh:::::hhh      a::::::::::::a   oo:::::::::::oo
+  x:::::x  x:::::x   i::::i   aaaaaaaaa:::::a o:::::::::::::::o h::::::::::::::hh    aaaaaaaaa:::::a o:::::::::::::::o
+   x:::::xx:::::x    i::::i            a::::a o:::::ooooo:::::o h:::::::hhh::::::h            a::::a o:::::ooooo:::::o
+    x::::::::::x     i::::i     aaaaaaa:::::a o::::o     o::::o h::::::h   h::::::h    aaaaaaa:::::a o::::o     o::::o
+     x::::::::x      i::::i   aa::::::::::::a o::::o     o::::o h:::::h     h:::::h  aa::::::::::::a o::::o     o::::o
+     x::::::::x      i::::i  a::::aaaa::::::a o::::o     o::::o h:::::h     h:::::h a::::aaaa::::::a o::::o     o::::o
+    x::::::::::x     i::::i a::::a    a:::::a o::::o     o::::o h:::::h     h:::::ha::::a    a:::::a o::::o     o::::o
+   x:::::xx:::::x   i::::::ia::::a    a:::::a o:::::ooooo:::::o h:::::h     h:::::ha::::a    a:::::a o:::::ooooo:::::o
+  x:::::x  x:::::x  i::::::ia:::::aaaa::::::a o:::::::::::::::o h:::::h     h:::::ha:::::aaaa::::::a o:::::::::::::::o
+ x:::::x    x:::::x i::::::i a::::::::::aa:::a oo:::::::::::oo  h:::::h     h:::::h a::::::::::aa:::a oo:::::::::::oo
+xxxxxxx      xxxxxxxiiiiiiii  aaaaaaaaaa  aaaa   ooooooooooo    hhhhhhh     hhhhhhh  aaaaaaaaaa  aaaa   ooooooooooo
