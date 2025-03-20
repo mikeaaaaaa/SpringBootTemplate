@@ -10,8 +10,8 @@ activeProfile=test
 # 容器名称
 containerName=$imageName
 
-if [ ! -f "./config/application.properties"  ] || [ ! -f "./config/application-$activeProfile.properties"  ]; then
-    echo "there is no application.properties or application-$activeProfile.properties file in the current directory: $currentDir"
+if [ ! -f "./config/application.yml"  ] || [ ! -f "./config/application-$activeProfile.yml"  ]; then
+    echo "there is no application.yml or application-$activeProfile.yml file in the current directory: $currentDir"
     exit 1
 fi
 
