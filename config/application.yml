@@ -8,6 +8,7 @@ server:
       cookie:
         max-age: 2592000
 
+
 spring:
   application:
     name: springboot-init
