@@ -12,12 +12,5 @@ import javax.annotation.Resource;
 @SpringBootTest(classes = MainApplication.class)
 class MainApplicationTests {
 
-    @Resource
-    private WxOpenConfig wxOpenConfig;
-
-    @Test
-    void contextLoads() {
-        System.out.println(wxOpenConfig);
-    }
 
 }

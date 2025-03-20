@@ -1,0 +1,77 @@
+server:
+  address: 0.0.0.0
+  port: 8101
+  servlet:
+    context-path: /api
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
+
+spring:
+  application:
+    name: springboot-init
+  # 默认 dev 环境.根据配置加载prod还是test环境，如有相同，则采取覆盖策略
+  profiles:
+    active: test
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    druid:
+      initial-size: 5 # 初始化连接数
+      min-idle: 5 # 最少空闲连接数
+      max-active: 20 # 最大连接数
+      max-wait: 60000 # 获取连接的最大等待时间，60s
+      time-between-eviction-runs-millis: 60000 # 每隔 60000 毫秒（60 秒），Druid 会检查并回收空闲连接
+      min-evictable-idle-time-millis: 300000 # 连接在池中最小生存的时间，5 min
+      validation-query: SELECT 1 FROM DUAL # 用来检测连接是否有效的 SQL
+      test-while-idle: true # 申请连接的时候检测有效性
+      pool-prepared-statements: true # 缓存预处理语句，提升性能
+      max-pool-prepared-statement-per-connection-size: 20 # 每个连接最多缓存多少个预处理语句
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  # Redis 配置
+  redis:
+    lettuce: # 使用 Lettuce 连接池（默认）
+      pool:
+        max-active: 8 # 最大连接数
+        max-idle: 8 # 最大空闲连接数
+        min-idle: 0 # 最小空闲连接数
+        max-wait: -1 # 最大等待时间（毫秒，-1 表示无限等待）
+
+  # 文件上传
+  servlet:
+    multipart:
+      # 大小限制
+      max-file-size: 10MB
+
+mybatis-plus:
+  type-aliases-package: com.xiaohao.springbootinit.model.entity # 实体类的路径，这样就不用写实体类的全类名了！
+  mapper-locations: classpath:mapper/*.xml # mapper.xml的路径
+  configuration:
+    map-underscore-to-camel-case: false # 这样在mapper.xml就不用写字段映射了,返回类型直接是实体类,如果设置为true，则会自动帮我们进行驼峰与下划线的转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为 1）
+      logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
+
+
+
+
+security:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    secret-key: itcast
+    # 设置jwt过期时间
+    ttl: 7200000
+    # 设置前端传递过来的令牌名称
+    token-name: Authentication
+    # token 前缀
+    token-prefix: Bearer
+    # claims-用户名
+    claims-username: userAccount
+
