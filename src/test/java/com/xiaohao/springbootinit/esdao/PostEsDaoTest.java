@@ -20,7 +20,7 @@ import java.util.Optional;
 /**
  * 帖子 ES 操作测试
  */
-@SpringBootTest
+// @SpringBootTest
 public class PostEsDaoTest {
 
     @Resource

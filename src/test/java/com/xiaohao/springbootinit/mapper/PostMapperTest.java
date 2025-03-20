@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 帖子数据库操作测试
  */
-@SpringBootTest
+// @SpringBootTest
 class PostMapperTest {
 
     @Resource

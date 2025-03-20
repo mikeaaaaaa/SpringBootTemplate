@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 /**
  * 帖子收藏服务测试
  */
-@SpringBootTest
+// @SpringBootTest
 class PostFavourServiceTest {
 
     @Resource

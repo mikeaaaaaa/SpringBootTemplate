@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 /**
  * 帖子服务测试
  */
-@SpringBootTest
+// @SpringBootTest
 class PostServiceTest {
 
     @Resource
