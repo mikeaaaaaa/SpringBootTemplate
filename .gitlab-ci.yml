@@ -112,9 +112,9 @@ mvn-build-job:       # This job runs in the build stage, which runs first.
   cache:
     - paths:
         - ./target
-  artifacts:
-    paths:
-      - target/*.jar
+#  artifacts:
+#    paths:
+#      - target/*.jar
 # 构建镜像步骤
 make-deploy-image-job:
   stage: deploy
