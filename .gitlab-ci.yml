@@ -105,7 +105,7 @@ stages:          # List of stages for jobs, and their order of execution
 mvn-build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
-    ## 打包 Service Project 为 jar包， 同时在测试过程中激活test profile
+    ## 打包 Service Project 为 jar包， 同时在测试过程中激活test profile（这里是maven的test profile，区别于springboot的profile）
     - mvn clean package -Ptest
     - echo "build complete."
     - ls ./target
